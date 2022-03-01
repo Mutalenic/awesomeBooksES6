@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- gh repo clone [https://github.com/Mutalenic/ES6AwesomeBook.git]
+- gh repo clone [https://github.com/Mutalenic/awesomeBooksES6.git]
 
 ## Authors
 
@@ -42,7 +42,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page [(https://github.com/Mutalenic/ES6AwesomeBook/issues)].
+Feel free to check the issues page [https://github.com/Mutalenic/awesomeBooksES6/issues].
 
 ## Show your support
 
