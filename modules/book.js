@@ -37,4 +37,3 @@ export default class Book {
     bookList.innerHTML = bookDIV;
   }
 }
-

@@ -1,5 +1,5 @@
 import Book from './modules/book.js';
-import { DateTime } from './modules/luxon/src/luxon.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 const bookTitle = document.querySelector('#title');
 const bookAuthor = document.querySelector('#author');
@@ -17,7 +17,7 @@ Form.addEventListener('submit', (e) => {
 Book.displayUI();
 
 const removeButton = document.querySelectorAll('.removeBtn');
-removeButton.forEach((item) => item.addEventListener('click', function () {
+removeButton.forEach((item) => item.addEventListener('click', function reload() {
   const deleteBook = new Book(bookTitle.value, bookAuthor.value, this.id);
   deleteBook.removeBook();
 }));
@@ -40,7 +40,7 @@ listBtn.forEach((btn, i) => {
 
 const displayTime = () => {
   document.getElementById('date').innerHTML = DateTime.now().toLocaleString(
-    DateTime.DATETIME_MED_WITH_SECONDS
+    DateTime.DATETIME_MED_WITH_SECONDS,
   );
   setInterval(displayTime, 1000);
 };
