@@ -18,7 +18,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[https://mutalenic.github.io/ES6AwesomeBook]
+[https://mutalenic.github.io/awesomeBooksES6/]
 
 ## Getting Started
 
