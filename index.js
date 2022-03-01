@@ -7,13 +7,13 @@ const Form = document.querySelector('form');
 const listBtn = document.querySelectorAll('.listBtn');
 const addActive = document.querySelectorAll('.section');
 
-Form.addEventListener('submit', () => {
+Form.addEventListener('submit', (e) => {
   const newBook = new Book(bookTitle.value, bookAuthor.value);
   newBook.addBook();
   bookAuthor.value = '';
   bookTitle.value = '';
+  e.preventDefault();
 });
-
 Book.displayUI();
 
 const removeButton = document.querySelectorAll('.removeBtn');
@@ -40,7 +40,7 @@ listBtn.forEach((btn, i) => {
 
 const displayTime = () => {
   document.getElementById('date').innerHTML = DateTime.now().toLocaleString(
-    DateTime.DATETIME_MED_WITH_SECONDS,
+    DateTime.DATETIME_MED_WITH_SECONDS
   );
   setInterval(displayTime, 1000);
 };

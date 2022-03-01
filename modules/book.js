@@ -38,6 +38,3 @@ export default class Book {
   }
 }
 
-// function updateDiv() {
-//   $('.book-list').load(window.location.href + ' .book-list');
-// }
